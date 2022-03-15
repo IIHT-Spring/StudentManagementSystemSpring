@@ -28,18 +28,19 @@ public class StudentController {
 		return id;
 		
 	}
-	
-	
 	@GetMapping("student/{id}")
 	public Optional<StudentEntity> getStudent(@PathVariable Integer id) {
 		Optional<StudentEntity> student = studentService.getStudent(id);
 		return student;
 	}
-	
 	@GetMapping("/allstudents")
 	public List<StudentEntity> getStudent(){
 		return studentService.getAllStudents();
 	}
+//	@GetMapping("/student/firstname/{firstname}")
+//	public List<StudentEntity> getStudentByName(@PathVariable String firstname){
+//		return studentService.getStudentByName(firstname);
+//	}
 	
 	@DeleteMapping("/student/{id}")
 	public ResponseEntity<StudentEntity> deleteOrder(@PathVariable Integer id) {

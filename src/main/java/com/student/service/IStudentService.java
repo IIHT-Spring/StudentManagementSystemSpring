@@ -15,4 +15,6 @@ public interface IStudentService {
 
 	public void deleteStudent(Integer id);
 
+//	public List<StudentEntity> getStudentByName(String firstname);
+
 }

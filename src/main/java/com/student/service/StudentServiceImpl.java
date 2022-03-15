@@ -29,4 +29,8 @@ public class StudentServiceImpl implements IStudentService{
 	public void deleteStudent(Integer id) {
 		studentRepository.deleteById(id);
 	}
+//	@Override
+//	public List<StudentEntity> getStudentByName(String firstname) {
+//		return studentRepository.getStudentByName(firstname);
+//	}
 }
